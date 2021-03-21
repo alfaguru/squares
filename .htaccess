@@ -43,7 +43,7 @@
 
 <IfModule mod_setenvif.c>
     <IfModule mod_headers.c>
-        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|a?png|svgz?|webp)$">
+        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|a?png|svgz?|webp|mp3)$">
             SetEnvIf Origin ":" IS_CORS
             Header set Access-Control-Allow-Origin "*" env=IS_CORS
         </FilesMatch>
@@ -179,6 +179,7 @@ Options -MultiViews
   # Media files
 
     AddType audio/mp4                                   f4a f4b m4a
+    AddType audio/mp2                                   mp3
     AddType audio/ogg                                   oga ogg opus
     AddType image/bmp                                   bmp
     AddType image/svg+xml                               svg svgz
