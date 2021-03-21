@@ -5,6 +5,7 @@ div.squares {
   height: 102vw;
   max-width: 569px;
   max-height: 581px;
+  overflow: hidden;
 }
 div.row {
   display: flex;
